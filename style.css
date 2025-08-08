@@ -110,6 +110,21 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
+}
+
+@keyframes slide {
+        from {
+                scale: 0.4;
+                opacity: 0;
+        }
+
+        to {
+                scale: 1;
+                opacity: 1;
+        }
 }
 
 .me img {
@@ -124,6 +139,9 @@ body {
         align-items: center;
         justify-content: center;
         width: 55%;
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
 }
 
 .text input {
@@ -158,10 +176,16 @@ body {
         color: #fff;
         width: 100%;
         margin: 15px 0px;
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
 }
 
 .project-vid {
         width: 35%;
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
 }
 
 .project-detail {
@@ -170,6 +194,9 @@ body {
         align-items: center;
         justify-content: center;
         width: 55%;
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
 }
 
 .project-vid video {
@@ -178,6 +205,12 @@ body {
 
 .project-detail h3 {
         margin-bottom: 15px;
+}
+
+/* Footer */
+
+.footer{
+        width: 100%;
 }
 
 @media (max-width:492px) {
